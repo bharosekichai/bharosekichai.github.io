@@ -2,3 +2,4 @@ User-agent: *
 Disallow: /feed/
 Disallow: /wp-content/
 Disallow: /wp-includes/
+Sitemap: https://bharosekichhai.tk/sitemap.xml
