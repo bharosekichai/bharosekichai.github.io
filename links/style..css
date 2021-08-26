@@ -1,0 +1,39 @@
+body{
+  text-align:center;
+  background:linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url("tea.jpg");
+  background-position:center;
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+img{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+}
+
+h1{
+  font-family:'Carmorant Garamond',serif;
+  font-size:150%;
+}
+ul{
+  list-style-type:none;
+  margin:0% 10% 0% 7%;
+}
+li{
+  font-family:'Carmorant Garamond',serif;
+  font-size:200%;
+  border:#FFFFFF solid 2px;
+  padding:1% 1% 1% 1%;
+  margin: 2% 2% 2% 2%;
+  display: block;
+  position: relative;
+  color:white;
+}
+li:hover{
+  color:black;
+  background:#C58E4C;
+}
+a{
+  text-decoration:none;
+}
