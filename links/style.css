@@ -4,6 +4,7 @@ body{
   background-position:center;
   background-size:cover;
   background-attachment: fixed;
+  color:#FFFFFF;
 }
 
 img{
@@ -20,7 +21,7 @@ h1{
   display:block;
   margin:auto;
   text-align:center;
-  color:black;
+  color:#FFFFFF;
   margin-top:2%;
   margin-bottom:2%;
 }
@@ -38,7 +39,7 @@ li{
   margin:auto;
   margin-top:1%;
   margin-bottom:1%;
-  width:50%;
+  width:80%;
   padding:1% 1% 1% 1%;
   text-align:center;
 }
@@ -48,4 +49,10 @@ li:hover{
 }
 a{
   text-decoration:none;
+}
+
+@media only screen and (min-width: 768px) {
+ li{
+   width:50%;
+ }
 }
