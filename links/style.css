@@ -4,6 +4,8 @@ body{
   background-position:center;
   background-size:cover;
   background-attachment: fixed;
+  position:relative;
+  margin 0 auto;
 }
 
 img{
@@ -27,7 +29,6 @@ li{
   border:#FFFFFF solid 2px;
   padding:1% 1% 1% 1%;
   margin: 0 auto;
-  position: relative;
   color:white;
 }
 li:hover{
