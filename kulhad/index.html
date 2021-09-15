@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:20px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+h2 {color:#B77729;}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background:#B77729;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-right-align" style="width:100%;font-size:22px">&#9747;</a>
+  <div class="w3-container">
+    <h3 class="w3-center"><img src="logo.jpg" style="width:50%" class="w3-center w3-circle" /></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">What we produce?</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Where to use?</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Why Kulhads?</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Prices</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background:#B77729;">
+  <a href="javascript:void(0)" class="w3-button w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Menu</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container"style="margin-top:80px;margin-bottom:0px;">
+    <h1 class="w3-jumbo "><u><b>BKC- Kulhad</b></u></h1>
+  </div>
+  
+   <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h2 class="w3-xxxlarge"><b>What we produce?</b></h2>
+    <hr style="width:50px;border:5px solid #B77729;" class="w3-round">
+    <p>Our mission is to provide earthly pots (kulhad) at best possible economical rate.</p>
+    <p> Our kulhads are prepared using best quality soil in an hygienic environment. 
+    </p>
+  </div>
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row w3-padding w3-container" id="showcase">
+    <h2 class="w3-xxxlarge"><b>Where to use?</b></h2>
+    <hr style="width:50px;border:5px solid #B77729;" class="w3-round">
+    <div class="w3-third">
+      <div class="w3-border w3-border-black w3-margin-right w3-margin-bottom w3-mobile">
+      <img src="kulhad-icecream.png" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <p class="w3-padding"> A Delhi restaurant is using kulhad to serve ice creams in it. </p>
+      </div>
+
+      <div class="w3-border w3-border-black w3-margin-right w3-margin-bottom w3-mobile">
+      <img src="kulhad-biryani.png" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <p class="w3-padding"> "Awesome Sauce India" made a video on Kulhad Egg briyani. </p>
+      </div>
+
+      <div class="w3-border w3-border-black w3-margin-right w3-margin-bottom w3-mobile">
+      <img src="kulhad-maggi.png" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <p class="w3-padding"> The Chai Story uses kulhad to sreve maggie in it. </p>
+      </div>
+
+      <div class="w3-border w3-border-black w3-margin-right w3-margin-bottom w3-mobile">
+      <img src="kulhad-chat.png" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <p class="w3-padding"> Many stalls in banaras use kulhad to serve chaat in it. </p>
+      </div>
+
+    </div>
+
+    <div class="w3-third">
+      <div class="w3-border w3-border-black w3-margin-right w3-margin-bottom w3-mobile">
+      <img src="kulhad-kulfi.png" style="width:100%;height:auto" onclick="onClick(this)" alt="Concrete meets bricks">
+      <p class="w3-padding"> Chilled Kulfi tastes great when served in kulhad. </p>
+      </div>
+
+      <div class="w3-border w3-border-black w3-margin-right w3-margin-bottom w3-mobile">
+      <img src="kulhad-sweets.png" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <p class="w3-padding"> Many restaurants uses kulhad to serve sweets in it. </p>
+      </div>
+
+      <div class="w3-border w3-border-black w3-margin-right w3-margin-bottom w3-mobile">
+      <img src="kulhad-lassi.png" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <p class="w3-padding"> Kulhad is also used to serve lassi by many restaurants. </p>
+      </div>
+
+      <div class="w3-border w3-border-black w3-margin-right w3-margin-bottom w3-mobile">
+      <img src="kulhad-dal.png" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <p class="w3-padding"> The famous Moradabadi daal is served in kulhad.  </p>
+      </div>
+    </div>
+
+    <div class="w3-third">
+      <div class="w3-border w3-border-black w3-margin-right w3-margin-bottom w3-mobile">
+      <img src="kulhad-cake.png" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <p class="w3-padding"> Space cakes by Nyssa is using kulhad to serve cupcakes. </p>
+      </div>
+
+      <div class="w3-border w3-border-black w3-margin-right w3-margin-bottom w3-mobile">
+      <img src="kulhad-curd.png" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <p class="w3-padding"> Many dairy company uses kulhad to serve curd in it.  </p>
+      </div>
+
+      <div class="w3-border w3-border-black w3-margin-right w3-margin-bottom w3-mobile">
+      <img src="kulhad-milk.png" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <p class="w3-padding"> The delicious Kesar Milk can also be served in kulhad. </p>
+      </div>
+
+      <div class="w3-border w3-border-black w3-margin-right w3-margin-bottom w3-mobile">
+      <img src="kulhad-bhel.png" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <p class="w3-padding"> TPOT café Noida is using kulhad to serve bhel. </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+ 
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h2 class="w3-xxxlarge"><b>Why kulhads?</b></h2>
+    <hr style="width:50px;border:5px solid #B77729;" class="w3-round">
+    <p>Why should we use kulhads ?</p>
+    <ul>
+      <li> Kulhads are made from clay, which is purely natural.</li>
+      <li> Kulhads are eco-friendly as they are bio-degradable unlike the plastic cups, which is hazardous for our nature. </li>
+      <li> Kulhads are one-time use products, which prevents transfer of germs and bacteria from others </li>
+      <li> Kulhads are cheaper than plastic or glass cups.</li>
+      <li> Kulhads adds earthly aroma to the hot and cold beverages like tea, coffee etc, which tastes great.</li>
+      <li> Kulhads contains variuos minerals of soil, which when consumed with beverages are beneficial for us.</li>
+      <li> Kulhads are alkaline, which helps in improving digestion, when used to drink beverages.</li>
+  </div>
+
+  
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h2 class="w3-xxxlarge"><b>Prices</b></h2>
+    <hr style="width:50px;border:5px solid #B77729;" class="w3-round">
+    
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Normal</li>
+        <li class="w3-padding-16">
+          <h2>Rupees x</h2>
+          <span class="w3-opacity">per kulhad</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-dark-grey w3-padding-large w3-hover-black">Order Now</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-xlarge w3-padding-32" style="background:#B77729;">Designed</li>
+       
+        <li class="w3-padding-16">
+          <h2>Rs y</h2>
+          <span class="w3-opacity">per kulhad</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-padding-large w3-hover-black" style="background-color:#B77729;">Order Now</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h2 class="w3-xxxlarge"><b>Contact.</b></h2>
+    <hr style="width:50px;border:5px solid #B77729;" class="w3-round">
+    <div class="w3-container w3-mobile">
+    <i class="fa fa-location-arrow w3-xxxlarge w3-margin"></i><span class="w3-xxlarge"> Gorakhpur (U.P.)</span>
+    </div>
+    <div class="w3-container w3-mobile">
+    <i class="fa fa-phone w3-xxxlarge w3-margin"></i><span class="w3-xxlarge">+918982140698</span>
+    </div>
+    <div class="w3-container w3-mobile">
+    <i class="fa fa-whatsapp w3-xxxlarge w3-margin"></i><span class="w3-xxlarge">+918982140698</span>
+    </div>
+     <div class="w3-container w3-mobile">
+    <i class="fa fa-envelope w3-xxxlarge w3-margin"></i><span class="w3-xxlarge">hr.bkcofficials@gmail.com</span>
+    </div>
+    </div>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32 w3-center" style="margin-top:75px;padding-right:58px">
+<p class="w3-large">Copyright &copy; 2021 Bharose ki Chai.  All rights reserved.</p><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
